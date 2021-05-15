@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#449FE6"
+    android:orientation="vertical"
+    tools:context=".iniFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="FRAGMENT INICIO"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="411dp"
+        android:layout_height="125dp"
+        android:layout_margin="10dp"
+        android:text="FRAGMET 1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="411dp"
+        android:layout_height="107dp"
+        android:layout_margin="10dp"
+        android:text="FRAGMET 2" />
+
+
+</LinearLayout>

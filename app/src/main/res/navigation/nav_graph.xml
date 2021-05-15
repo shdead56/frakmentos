@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/priFragment">
+
+    <fragment
+        android:id="@+id/priFragment"
+        android:name="com.example.frakmentos.priFragment"
+        android:label="fragment_pri"
+        tools:layout="@layout/fragment_pri" >
+        <action
+            android:id="@+id/action_priFragment_to_iniFragment"
+            app:destination="@id/iniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segFragment"
+        android:name="com.example.frakmentos.segFragment"
+        android:label="fragment_seg"
+        tools:layout="@layout/fragment_seg" >
+        <action
+            android:id="@+id/action_segFragment_to_terFragment"
+            app:destination="@id/terFragment" />
+        <action
+            android:id="@+id/action_segFragment_to_iniFragment"
+            app:destination="@id/iniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/iniFragment"
+        android:name="com.example.frakmentos.iniFragment"
+        android:label="fragment_ini"
+        tools:layout="@layout/fragment_ini" >
+        <action
+            android:id="@+id/action_iniFragment_to_priFragment"
+            app:destination="@id/priFragment" />
+        <action
+            android:id="@+id/action_iniFragment_to_segFragment"
+            app:destination="@id/segFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/terFragment"
+        android:name="com.example.frakmentos.terFragment"
+        android:label="fragment_ter"
+        tools:layout="@layout/fragment_ter" >
+        <action
+            android:id="@+id/action_terFragment_to_iniFragment"
+            app:destination="@id/iniFragment" />
+        <action
+            android:id="@+id/action_terFragment_to_segFragment"
+            app:destination="@id/segFragment" />
+    </fragment>
+</navigation>
